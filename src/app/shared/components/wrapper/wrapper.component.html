@@ -1,0 +1,14 @@
+<div class="scl-wrapper">
+  <div class="scl-content-page">
+    <div class="scl-wrapper__header mt-xxl">
+      <ng-container *ngIf="backButton">
+        <div
+          class="scl-back-button mr-lg"
+          (click)="goBack()">
+        </div>
+      </ng-container>
+      <h1>{{header}}</h1>
+    </div>
+    <ng-content></ng-content>
+  </div>
+</div>

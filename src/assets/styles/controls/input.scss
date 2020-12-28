@@ -1,0 +1,9 @@
+.scl {
+  &-input {
+    height: 40px;
+    border: 1px solid $medium-color;
+    border-radius: $border-radius;
+    padding: 0 $offset;
+    @include text-def;
+  }
+}

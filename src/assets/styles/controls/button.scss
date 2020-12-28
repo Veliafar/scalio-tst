@@ -1,0 +1,56 @@
+.scl {
+  &-btn {
+    height: 40px;
+    border-radius: $border-radius;
+    padding: 0 $offset;
+    @include text-def;
+    cursor: pointer;
+    background-color: $dark-color;
+    color: $light-color;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $mid-light-color;
+    }
+
+    &:active {
+      box-shadow: 0px 0px 5px 2px $medium-color;
+    }
+
+    &:disabled {
+      border: 1px solid $medium-color;
+      opacity: 0.5;
+      color: $light-color;
+    }
+  }
+
+  &-back-button {
+    display: block;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid $dark-color;
+    position: relative;
+
+    &:after {
+      width: 40px;
+      height: 40px;
+      font-size: 30px;
+      display: inline-block;
+      content: '\21E6';
+      color: $dark-color;
+      position: relative;
+      top: -6px;
+      left: 5px;
+    }
+
+    &:hover {
+      background-color: $mid-light-color;
+    }
+
+    &:active {
+      box-shadow: 0px 0px 5px 2px $medium-color;
+    }
+  }
+}

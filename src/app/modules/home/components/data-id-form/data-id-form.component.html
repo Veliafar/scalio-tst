@@ -1,0 +1,22 @@
+<section>
+  <p>
+    Please enter <i>integer</i> to get data by ID
+  </p>
+  <form
+    class="data-id__controls mt-lg"
+    [formGroup]="dataIdForm">
+    <input
+      class="scl-input"
+      type="text"
+      formControlName="dataId"
+      [regFormat]="onlyIntAndNull"
+      [autofocus]="true"
+    >
+    <button
+      [disabled]="!dataIdForm.valid"
+      class="scl-btn mt-lg"
+      (click)="getData()">
+      Get data
+    </button>
+  </form>
+</section>

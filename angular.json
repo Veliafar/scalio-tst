@@ -7,7 +7,9 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "spec": false,
+          "skipTests": true
         },
         "@schematics/angular:application": {
           "strict": true
@@ -31,7 +33,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "./src/assets/styles/styles.scss",
+              "./node_modules/ng-zorro-antd/ng-zorro-antd.less"
             ],
             "scripts": []
           },
@@ -94,7 +97,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "./src/assets/styles/styles.scss",
+              "./node_modules/ng-zorro-antd/ng-zorro-antd.less"
             ],
             "scripts": []
           }
